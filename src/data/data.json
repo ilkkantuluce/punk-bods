@@ -1,0 +1,184 @@
+[
+    {
+        "id": 0,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#67a670",
+        "image": "/images/0.png",
+        "bio": {
+            "Name": "Mr.A",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "female",
+            "BodyType": "thick"
+        },
+        "attributes": {
+            "Bottom": "shorts"
+        }
+    },
+    {
+        "id": 1,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#67a670",
+        "image": "/images/1.png",
+        "bio": {
+            "Name": "Mr.B",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "male",
+            "BodyType": "thin"
+        },
+        "attributes": {
+            "Underwear": "boxers",
+            "Bottom": "ripped_pants",
+            "Outerwear": "cape"
+        }
+    },
+    {
+        "id": 2,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#95554f",
+        "image": "/images/2.png",
+        "bio": {
+            "Name": "Mr.C",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "female",
+            "BodyType": "thick"
+        },
+        "attributes": {
+        }
+    },
+    {
+        "id": 3,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#95554f",
+        "image": "/images/3.png",
+        "bio": {
+            "Name": "Mr.D",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "male",
+            "BodyType": "thin"
+        },
+        "attributes": {
+            "Underwear": "boxers",
+            "Socks": "long_socks",
+            "Bottom": "baggy_pants",
+            "Outerwear": "bathrobe"
+        }
+    },
+    {
+        "id": 4,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#638596",
+        "image": "/images/4.png",
+        "bio": {
+            "Name": "Mr.E",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "male",
+            "BodyType": "thin"
+        },
+        "attributes": {
+            "Underwear": "boxers",
+            "Bottom": "baggy_pants",
+            "Outerwear": "rain_coat",
+            "Item": "cat"
+        }
+    },
+    {
+        "id": 5,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#67a670",
+        "image": "/images/5.png",
+        "bio": {
+            "Name": "Mr.F",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "female",
+            "BodyType": "thin"
+        },
+        "attributes": {}
+    },
+    {
+        "id": 6,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#67a670",
+        "image": "/images/6.png",
+        "bio": {
+            "Name": "Mr.G",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "male",
+            "BodyType": "thin"
+        },
+        "attributes": {
+            "Underwear": "boxers",
+            "Socks": "long_socks",
+            "Top": "tshirt",
+            "Outerwear": "suit_jacket"
+        }
+    },
+    {
+        "id": 7,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#95554f",
+        "image": "/images/7.png",
+        "bio": {
+            "Name": "Mr.H",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "female",
+            "BodyType": "thick"
+        },
+        "attributes": {}
+    },
+    {
+        "id": 8,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#95554f",
+        "image": "/images/8.png",
+        "bio": {
+            "Name": "Mr.I",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "male",
+            "BodyType": "thin"
+        },
+        "attributes": {
+            "Underwear": "boxers",
+            "Bottom": "baggy_pants",
+            "Outerwear": "trench_coat"
+        }
+    },
+    {
+        "id": 9,
+        "subtitle": "One of 1234 male bods",
+        "background_color": "#67a670",
+        "image": "/images/9.png",
+        "bio": {
+            "Name": "Mr.J",
+            "Birthdate": "May 9th, 1995",
+            "Age": "25",
+            "Location": "Toronto",
+            "gender": "male",
+            "BodyType": "thin"
+        },
+        "attributes": {
+            "Underwear": "boxers",
+            "Socks": "long_socks",
+            "Top": "sleeveless_shirt",
+            "Bottom": "baggy_pants",
+            "Outerwear": "jumpsuit"
+        }
+    }
+]
