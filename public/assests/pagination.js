@@ -235,6 +235,7 @@
 
 })(jQuery, window, document);
 
+
 if(document.getElementsByClassName("top")[0].innerHTML == ''){
 	document.getElementsByClassName("top-wrap")[0].style.display = 'none';
 }

@@ -4,6 +4,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#67a670",
         "image": "/images/0.png",
+        "available": false,
         "bio": {
             "Name": "Mr.A",
             "Birthdate": "May 9th, 1995",
@@ -21,6 +22,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#67a670",
         "image": "/images/1.png",
+        "available": true,
         "bio": {
             "Name": "Mr.B",
             "Birthdate": "May 9th, 1995",
@@ -40,6 +42,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#95554f",
         "image": "/images/2.png",
+        "available": true,
         "bio": {
             "Name": "Mr.C",
             "Birthdate": "May 9th, 1995",
@@ -56,6 +59,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#95554f",
         "image": "/images/3.png",
+        "available": false,
         "bio": {
             "Name": "Mr.D",
             "Birthdate": "May 9th, 1995",
@@ -76,6 +80,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#638596",
         "image": "/images/4.png",
+        "available": false,
         "bio": {
             "Name": "Mr.E",
             "Birthdate": "May 9th, 1995",
@@ -96,6 +101,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#67a670",
         "image": "/images/5.png",
+        "available": false,
         "bio": {
             "Name": "Mr.F",
             "Birthdate": "May 9th, 1995",
@@ -111,6 +117,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#67a670",
         "image": "/images/6.png",
+        "available": true,
         "bio": {
             "Name": "Mr.G",
             "Birthdate": "May 9th, 1995",
@@ -131,6 +138,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#95554f",
         "image": "/images/7.png",
+        "available": true,
         "bio": {
             "Name": "Mr.H",
             "Birthdate": "May 9th, 1995",
@@ -146,6 +154,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#95554f",
         "image": "/images/8.png",
+        "available": true,
         "bio": {
             "Name": "Mr.I",
             "Birthdate": "May 9th, 1995",
@@ -165,6 +174,7 @@
         "subtitle": "One of 1234 male bods",
         "background_color": "#67a670",
         "image": "/images/9.png",
+        "available": false,
         "bio": {
             "Name": "Mr.J",
             "Birthdate": "May 9th, 1995",

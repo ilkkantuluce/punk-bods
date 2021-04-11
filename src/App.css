@@ -51,8 +51,30 @@ nav .navbar-brand-text{
 nav .navbar-nav a{
   color: black !important;
   font-size: 19px;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  margin-left: 15px !important;
+  padding: 0px !important;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-nav{
+    margin-top: 10px;
+  }
+
+  nav .navbar-nav a{
+    margin-left: 0px !important;
+  }
+}
+
+nav .navbar-nav a:focus{
+  animation-name: flickerAnimation;
+  animation-duration: .3s;
+  animation-iteration-count: 3;
 }
 
 .home-header{
@@ -167,6 +189,7 @@ nav .navbar-nav a{
 
 .pager{
   margin-top: 10px;
+  display: flex;
 }
 
 .pager .pageNumbers a{
@@ -195,7 +218,7 @@ nav .navbar-nav a{
 
 footer{
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   border-top: 1px gray solid;
   padding-top: 20px;
 }
