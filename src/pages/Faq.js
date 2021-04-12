@@ -3,11 +3,11 @@ function Faq() {
     return(
       <div className="faq">
         <div className="w-65 m-auto">
-          <h1>Story</h1>
+          <h1 id="story">Story</h1>
           <p>Lorem Ipsum is simply dummy lext of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of ype and scrambled it to make a type specimen book. It has survived nol only five centuries, but also the leap into electronic lypeselling, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
         </div>
         <div className="w-65 m-auto">
-          <h1>Faq</h1>
+          <h1 id="faq">Faq</h1>
           <b>What are punkbods?</b>
           <p>Punkbods is an art collection of 10,000 unique digilal characters stored on the Ethereum blockchain as non-fungible tokens (i.e. NFTs). They are designed lo be an extension lo cryplopunks. Each bod is an exact.1 to 1 match with an existing punk.</p>
         

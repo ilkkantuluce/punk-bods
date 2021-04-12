@@ -1,6 +1,6 @@
 import homeHeaderImage from '../images/home_page_header.png'
 
-function Story() {
+function Home() {
     return(
       <div className="home">
         <div className="home-header">
@@ -33,4 +33,4 @@ function Story() {
     ) ;
   }
 
-export default Story
+export default Home;

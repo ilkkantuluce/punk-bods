@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Switch, Route, NavLink} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import './App.css';
-import Story from './pages/Story'
+import Home from './pages/Home'
 import Faq from './pages/Faq'
 import Gallery from './pages/Gallery'
 import data from "./data/data.json";
@@ -25,10 +26,10 @@ function App() {
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/" >story</NavLink>
+                <HashLink smooth className="nav-link" to="/faq#story" >story</HashLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/faq">faq</NavLink>
+                <HashLink smooth className="nav-link" to="/faq#faq">faq</HashLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/gallery">gallery</a>
@@ -124,7 +125,7 @@ function App() {
             <Faq />
           </Route>
           <Route path="/">
-            <Story />
+            <Home />
           </Route>
         </Switch>
 
