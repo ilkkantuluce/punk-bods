@@ -56,8 +56,8 @@ function search() {
         a = ahref[i].getElementsByTagName("p")[0];
         txtValue = a.textContent || a.innerText;
         if(input.value == ''){
-            ahref[i].classList.remove("no");
-            ahref[i].classList.remove("mystyle");
+          ahref[i].classList.remove("no");
+          ahref[i].classList.remove("mystyle");
           ahref[i].classList.add("mystyle2");
           document.getElementsByClassName("pager")[0].style.display = 'flex';
           var resultNumber2 = document.querySelectorAll('.mystyle2').length;
@@ -93,14 +93,36 @@ function search() {
       filter = input.toUpperCase();
       itemsWrap = document.getElementById("items-wrap");
       ahref = itemsWrap.getElementsByTagName("a");
+      document.getElementById("myInput").value = '';
       for (i = 0; i < ahref.length; i++) {
         a = ahref[i].getElementsByTagName("p")[1];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            ahref[i].style.display = "";
-            document.getElementsByClassName("pager")[0].style.display = 'none'
+          ahref[i].classList.add("mystyle");
+          document.getElementsByClassName("pager")[0].style.display = 'none';
+          var resultNumber = document.querySelectorAll('.mystyle').length;
+          document.getElementById('li-length').innerHTML = resultNumber;
+
+          if(document.getElementById('li-length').innerHTML == '0'){
+            document.getElementById('no-result').innerHTML = 'No result';
+          }
+          else{
+            document.getElementById('no-result').innerHTML = '';
+          }
         } else {
-            ahref[i].style.display = "none";
+            console.log(data.length)
+            ahref[i].classList.remove("mystyle");
+            ahref[i].classList.add("no");
+            document.getElementsByClassName("pager")[0].style.display = 'none';
+            var resultNumber = document.querySelectorAll('.mystyle').length;
+            document.getElementById('li-length').innerHTML = resultNumber;
+
+            if(document.getElementById('li-length').innerHTML == '0'){
+              document.getElementById('no-result').innerHTML = 'No result';
+            }
+            else{
+              document.getElementById('no-result').innerHTML = '';
+            }
         }
       }
     }
@@ -110,14 +132,36 @@ function search() {
       filter = input.toUpperCase();
       itemsWrap = document.getElementById("items-wrap");
       ahref = itemsWrap.getElementsByTagName("a");
+      document.getElementById("myInput").value = '';
       for (i = 0; i < ahref.length; i++) {
         a = ahref[i].getElementsByTagName("p")[1];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            ahref[i].style.display = "";
-            document.getElementsByClassName("pager")[0].style.display = 'none'
+          ahref[i].classList.add("mystyle");
+          document.getElementsByClassName("pager")[0].style.display = 'none';
+          var resultNumber = document.querySelectorAll('.mystyle').length;
+          document.getElementById('li-length').innerHTML = resultNumber;
+
+          if(document.getElementById('li-length').innerHTML == '0'){
+            document.getElementById('no-result').innerHTML = 'No result';
+          }
+          else{
+            document.getElementById('no-result').innerHTML = '';
+          }
         } else {
-            ahref[i].style.display = "none";
+          console.log(data.length)
+          ahref[i].classList.remove("mystyle");
+          ahref[i].classList.add("no");
+          document.getElementsByClassName("pager")[0].style.display = 'none';
+          var resultNumber = document.querySelectorAll('.mystyle').length;
+          document.getElementById('li-length').innerHTML = resultNumber;
+
+          if(document.getElementById('li-length').innerHTML == '0'){
+            document.getElementById('no-result').innerHTML = 'No result';
+          }
+          else{
+            document.getElementById('no-result').innerHTML = '';
+          }
         }
       }
     }
@@ -126,7 +170,14 @@ function search() {
       itemsWrap = document.getElementById("items-wrap");
       ahref = itemsWrap.getElementsByTagName("a");
       for (i = 0; i < ahref.length; i++) {
-        ahref[i].style.display = "";
+        ahref[i].classList.remove("no");
+        ahref[i].classList.remove("mystyle");
+      ahref[i].classList.add("mystyle2");
+      document.getElementsByClassName("pager")[0].style.display = 'flex';
+      var resultNumber2 = document.querySelectorAll('.mystyle2').length;
+      document.getElementById('li-length').innerHTML = resultNumber2;
+      
+
         document.getElementsByClassName("pager")[0].style.display = 'flex'
       }
     }
@@ -166,7 +217,7 @@ function Gallery() {
         </div>
   
         <div className="paginate 1">
-          <div className="row items" id="items-wrap"><h1 id="no-result"></h1>
+          <div className="row items" id="items-wrap"><h1 id="no-result" className=""></h1>
             {data.map((data) => {
                 return (
                   <a href={'/' + data.id} className="col-md-4" key={data.id}>
