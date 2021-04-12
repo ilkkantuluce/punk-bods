@@ -9,22 +9,38 @@ function search() {
     filter = input.value.toUpperCase();
     itemsWrap = document.getElementById("items-wrap");
     ahref = itemsWrap.getElementsByTagName("a");
-    document.getElementById('li-length').innerHTML = ahref.length;
     
     for (i = 0; i < ahref.length; i++) {
         a = ahref[i].getElementsByTagName("p")[0];
         txtValue = a.textContent || a.innerText;
-        console.log('first:' + txtValue.toUpperCase().indexOf(filter))
-        console.log('second:' + ahref.length)
-        var test12 = txtValue.toUpperCase().indexOf(filter) + ahref.length; 
-        console.log(test12 - ahref.length)
-  
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            ahref[i].style.display = "";
-            document.getElementsByClassName("pager")[0].style.display = 'none'
+            ahref[i].classList.add("mystyle");
+            document.getElementsByClassName("pager")[0].style.display = 'none';
+            var resultNumber = document.querySelectorAll('.mystyle').length;
+            document.getElementById('li-length').innerHTML = resultNumber;
+
+            if(document.getElementById('li-length').innerHTML == '0'){
+              document.getElementById('no-result').innerHTML = 'No result';
+            }
+            else{
+              document.getElementById('no-result').innerHTML = '';
+            }
+
         } else {
-            ahref[i].style.display = "none";
-            document.getElementsByClassName("pager")[0].style.display = 'none'
+            console.log(data.length)
+            ahref[i].classList.remove("mystyle");
+            ahref[i].classList.add("no");
+            document.getElementsByClassName("pager")[0].style.display = 'none';
+            var resultNumber = document.querySelectorAll('.mystyle').length;
+            document.getElementById('li-length').innerHTML = resultNumber;
+
+            if(document.getElementById('li-length').innerHTML == '0'){
+              document.getElementById('no-result').innerHTML = 'No result';
+            }
+            else{
+              document.getElementById('no-result').innerHTML = '';
+            }
+            
           }
     }
   }
@@ -40,12 +56,23 @@ function search() {
         a = ahref[i].getElementsByTagName("p")[0];
         txtValue = a.textContent || a.innerText;
         if(input.value == ''){
-          ahref[i].style.display = "";
-          document.getElementsByClassName("pager")[0].style.display = 'flex'
+            ahref[i].classList.remove("no");
+            ahref[i].classList.remove("mystyle");
+          ahref[i].classList.add("mystyle2");
+          document.getElementsByClassName("pager")[0].style.display = 'flex';
+          var resultNumber2 = document.querySelectorAll('.mystyle2').length;
+          document.getElementById('li-length').innerHTML = resultNumber2;
+          
+          if(document.getElementById('li-length').innerHTML == '0'){
+            document.getElementById('no-result').innerHTML = 'No result';
+          }
+          else{
+            document.getElementById('no-result').innerHTML = '';
+          }
         }
     }
   }
-  
+
   
   function checkboxinput(){
     var result = document.getElementById("result");
@@ -139,7 +166,7 @@ function Gallery() {
         </div>
   
         <div className="paginate 1">
-          <div className="row items" id="items-wrap">
+          <div className="row items" id="items-wrap"><h1 id="no-result"></h1>
             {data.map((data) => {
                 return (
                   <a href={'/' + data.id} className="col-md-4" key={data.id}>

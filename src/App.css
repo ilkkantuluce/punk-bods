@@ -306,3 +306,15 @@ footer h3{
   background-color: black;
   color: white;
 }
+
+.no{
+  display: none !important;
+}
+
+.mystyle{
+  display: block !important;
+}
+
+.mystyle2{
+  display: block;
+}
