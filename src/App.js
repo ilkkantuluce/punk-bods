@@ -128,8 +128,8 @@ function App() {
           </Route>
         </Switch>
 
-          <div className="container fixed-bottom">
-            <footer className="">
+          <div className="container footer-wrap">
+            <footer>
               <div className="row">
                 <div className="col-md-4">
                   <div className="d-flex">
