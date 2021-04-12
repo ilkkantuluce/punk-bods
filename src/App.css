@@ -7,6 +7,11 @@ body{
   width: 65%;
 }
 
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1024px;
+  }
+}
 textarea:focus,
 button:focus,
 input[type="text"]:focus,
@@ -70,12 +75,12 @@ nav .navbar-nav a{
     margin-left: 0px !important;
   }
 }
-
+/*
 nav .navbar-nav a:focus{
   animation-name: flickerAnimation;
   animation-duration: .3s;
   animation-iteration-count: 3;
-}
+}*/
 
 .home-header{
   position: relative;
@@ -216,11 +221,14 @@ nav .navbar-nav a:focus{
   color: gray;
 }
 
+.fixed-bottom{
+  background-color: white;
+}
+
 footer{
-  margin-top: 50px;
-  margin-bottom: 5px;
   border-top: 1px gray solid;
   padding-top: 20px;
+  background-color: white;
 }
 
 footer .text-right a{
@@ -236,6 +244,10 @@ footer .text-right a:hover{
 footer h3{
   margin-bottom: 0px;
   font-weight: bold;
+}
+
+.footer-height{
+  height: 160px;
 }
 
 .home .w-65{

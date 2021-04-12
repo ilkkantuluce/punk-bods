@@ -25,10 +25,10 @@ function App() {
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">story</NavLink>
+                <NavLink className="nav-link" to="/" >story</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/faq" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" >faq</NavLink>
+                <NavLink className="nav-link" to="/faq">faq</NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/gallery">gallery</a>
@@ -128,23 +128,26 @@ function App() {
           </Route>
         </Switch>
 
-          <footer>
-            <div className="row">
-              <div className="col-md-5">
-                <div className="d-flex">
-                  <p className="pt-2 mr-1">&#169;</p><h3>PunkBods</h3>
+          <div className="container fixed-bottom">
+            <footer className="">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="d-flex">
+                    <p className="pt-2 mr-1">&#169;</p><h3>PunkBods</h3>
+                  </div>
+                </div>
+                <div className="col-md-8 text-right mt-2">
+                  <a href="">Apply to be a collector</a>
+                  <a href="">Submit Ideas</a>
+                  <a href="">Discord</a>
+                  <a href="">Twiller </a>
+                  <a href="">OpenSea</a>
+                  <a href="">Contact</a>
                 </div>
               </div>
-              <div className="col-md-7 text-right mt-2">
-                <a href="">Apply to be a collector</a>
-                <a href="">Submit Ideas</a>
-                <a href="">Discord</a>
-                <a href="">Twiller </a>
-                <a href="">OpenSea</a>
-                <a href="">Contact</a>
-              </div>
-            </div>
-          </footer>
+            </footer>
+          </div>
+          <div className="footer-height"></div>
       </div>
     </Router>
   );
