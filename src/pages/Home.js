@@ -34,7 +34,7 @@ function Home() {
       </div>
       */
       
-      
+      /*
       <div className="home2">
         <div className="row">
           <div className="col-5 text-right">
@@ -48,9 +48,9 @@ function Home() {
           </div>
         </div>
       </div>
-      
+      */
 
-      /*
+      
       <div className="home3">
         <div className="home3-bg"></div>
         <div className="home-header">
@@ -61,7 +61,7 @@ function Home() {
           </div>
         </div>
       </div>
-      */
+      
 
 
     ) ;

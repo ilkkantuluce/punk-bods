@@ -129,25 +129,30 @@ nav .navbar-nav a:focus{
 }
 
 .home2 h1{
-  font-size: 5vw;
+  font-size: 50px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .home2 .w-75{
+    width: 100% !important;
+  }
+  .home2 h1{
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
 .home3 .home3-bg{
   background: #405661;
   width: 100%;
-  height: 85%;
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
-  .home3 .home3-bg{
-    height: 73%;
-  }
-}
 
 .gallery .form-group{
   position: relative;
@@ -265,7 +270,6 @@ nav .navbar-nav a:focus{
 footer{
   border-top: 1px gray solid;
   padding-top: 20px;
-  background-color: white;
   margin-bottom: 5px;
 }
 
