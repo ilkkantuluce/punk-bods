@@ -1,7 +1,9 @@
 import homeHeaderImage from '../images/home_page_header.png'
+import homeHeaderImage2 from '../images/home_page_header2.png'
 
 function Home() {
     return(
+      /*
       <div className="home">
         <div className="home-header">
           <img src={homeHeaderImage} className="img-fluid"/>
@@ -30,6 +32,38 @@ function Home() {
   
         </div>
       </div>
+      */
+      
+      
+      <div className="home2">
+        <div className="row">
+          <div className="col-5 text-right">
+            <img src={homeHeaderImage2} className="img-fluid"/>
+          </div>
+          <div className="col-7 mt-auto mb-auto">
+            <div className="w-75">
+              <h1>PunkBods</h1>
+              <p>A private art collection of 10,000 unique digital characters, created for the cryptopunks ecosystem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      /*
+      <div className="home3">
+        <div className="home3-bg"></div>
+        <div className="home-header">
+          <img src={homeHeaderImage} className="img-fluid"/>
+          <div className="on-image">
+            <h1>PunkBods</h1>
+            <p>A private art collection of 10,000 unique digital characters, created for the cryptopunks ecosystem.</p>
+          </div>
+        </div>
+      </div>
+      */
+
+
     ) ;
   }
 
