@@ -15,7 +15,7 @@ function search() {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             ahref[i].classList.add("mystyle");
-            document.getElementsByClassName("pager")[0].style.display = 'none';
+            ///document.getElementsByClassName("pager")[0].style.display = 'none';
             var resultNumber = document.querySelectorAll('.mystyle').length;
             document.getElementById('li-length').innerHTML = resultNumber;
 
@@ -30,7 +30,7 @@ function search() {
             console.log(data.length)
             ahref[i].classList.remove("mystyle");
             ahref[i].classList.add("no");
-            document.getElementsByClassName("pager")[0].style.display = 'none';
+            ///document.getElementsByClassName("pager")[0].style.display = 'none';
             var resultNumber = document.querySelectorAll('.mystyle').length;
             document.getElementById('li-length').innerHTML = resultNumber;
 
@@ -59,7 +59,7 @@ function search() {
           ahref[i].classList.remove("no");
           ahref[i].classList.remove("mystyle");
           ahref[i].classList.add("mystyle2");
-          document.getElementsByClassName("pager")[0].style.display = 'flex';
+          ///document.getElementsByClassName("pager")[0].style.display = 'flex';
           var resultNumber2 = document.querySelectorAll('.mystyle2').length;
           document.getElementById('li-length').innerHTML = resultNumber2;
           
@@ -99,7 +99,7 @@ function search() {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           ahref[i].classList.add("mystyle");
-          document.getElementsByClassName("pager")[0].style.display = 'none';
+          ///document.getElementsByClassName("pager")[0].style.display = 'none';
           var resultNumber = document.querySelectorAll('.mystyle').length;
           document.getElementById('li-length').innerHTML = resultNumber;
 
@@ -113,7 +113,7 @@ function search() {
             console.log(data.length)
             ahref[i].classList.remove("mystyle");
             ahref[i].classList.add("no");
-            document.getElementsByClassName("pager")[0].style.display = 'none';
+            ///document.getElementsByClassName("pager")[0].style.display = 'none';
             var resultNumber = document.querySelectorAll('.mystyle').length;
             document.getElementById('li-length').innerHTML = resultNumber;
 
@@ -138,7 +138,7 @@ function search() {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
           ahref[i].classList.add("mystyle");
-          document.getElementsByClassName("pager")[0].style.display = 'none';
+          //document.getElementsByClassName("pager")[0].style.display = 'none';
           var resultNumber = document.querySelectorAll('.mystyle').length;
           document.getElementById('li-length').innerHTML = resultNumber;
 
@@ -152,7 +152,7 @@ function search() {
           console.log(data.length)
           ahref[i].classList.remove("mystyle");
           ahref[i].classList.add("no");
-          document.getElementsByClassName("pager")[0].style.display = 'none';
+          //document.getElementsByClassName("pager")[0].style.display = 'none';
           var resultNumber = document.querySelectorAll('.mystyle').length;
           document.getElementById('li-length').innerHTML = resultNumber;
 
@@ -173,12 +173,12 @@ function search() {
         ahref[i].classList.remove("no");
         ahref[i].classList.remove("mystyle");
       ahref[i].classList.add("mystyle2");
-      document.getElementsByClassName("pager")[0].style.display = 'flex';
+      ///document.getElementsByClassName("pager")[0].style.display = 'flex';
       var resultNumber2 = document.querySelectorAll('.mystyle2').length;
       document.getElementById('li-length').innerHTML = resultNumber2;
       
 
-        document.getElementsByClassName("pager")[0].style.display = 'flex'
+        ///document.getElementsByClassName("pager")[0].style.display = 'flex'
       }
     }
   
